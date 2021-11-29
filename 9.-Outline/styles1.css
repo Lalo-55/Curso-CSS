@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(61, 50, 50);
+    color: blanchedalmond;
+}
+.border,
+.outline{
+    background-color: lightcoral;
+    width: 100px;
+    padding: 10px 25px;
+    margin: 50px 100px;
+}
+.border{
+    border: 2px solid lightcoral;
+
+}
+.outline{
+    outline: 200px solid lightcoral;
+}

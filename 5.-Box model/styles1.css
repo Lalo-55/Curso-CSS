@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: bisque;
+}
+.block{
+    background-color: purple;
+    width: 200px;/*Ancho*/
+    height: 200px;/*Alto*/
+
+}
+.inline{
+    background-color: lightcoral;
+    color:inherit;
+}

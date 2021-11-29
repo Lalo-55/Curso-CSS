@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color: darkslategray;
+    color: ghostwhite;
+    /* padding-top: 50px; */
+}
+.header{
+    
+    text-align: center;
+    /* padding: 25px 0; */
+    background-color: gold;
+    color: lavender;
+
+     /* position: sticky;
+     top: 0;
+   
+    height: 500px; */
+  
+}
+/* .menu{
+    position:sticky;
+    bottom: 0;
+    
+    background-color: aqua;
+} */
+article{
+    border: 2px double white;
+    outline: 3px solid blueviolet;
+}
+.article-title{
+    position: sticky;
+    top:0px;
+    background-color: darkslategrey;
+}
+.text{
+    background-color: blueviolet;
+    padding: 50px;
+    text-align: center;
+   
+    
+ 
+}
+img{
+    width: 100%;
+    display: block;
+}

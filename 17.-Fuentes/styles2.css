@@ -1,0 +1,27 @@
+@font-face{
+    font-family: "maya";
+    /* src: local("arial"), */
+    src: url("/css/17.-Fuentes/assets/fonts/Mayan.ttf"); 
+}
+body{
+    background-color: #333;
+    color: aquamarine;
+    font-family: "maya",serif;
+}
+.text{
+     text-transform:capitalize;/* Metodo que transforma la primera letra de cada palabra en mayuscula */
+     text-shadow: 1px 1px 1px, 1.3px 1.3px 1.4px palevioletred;
+
+     letter-spacing: -px;
+     word-spacing: 20px;
+
+     word-break: break-all;
+     width: 11px;
+     text-align: center;
+
+}
+.link{
+    color: inherit;
+    text-decoration: none;
+
+}

@@ -1,0 +1,35 @@
+/*Selectores Compuestos
+    Selectores Agrupados
+    Selectores Combinadores
+    Selector de hermano siguiente +
+    */
+
+.text{/*Selector agrupados*/
+    background-color:darkseagreen;
+}
+.text-1{
+    background-color:darkseagreen;
+}
+.text-2{
+    background-color: darkseagreen
+}
+.text-3{
+    background-color: darkseagreen;
+}
+/* Es igual a */
+/*Selector agrupados*/
+.text,
+.text-1,
+.text-2,
+.text-3{
+    background-color: darkturquoise;
+}
+
+div .title-2{ /*agrega estilo solo a la clase "title-2"
+                 que esta dentro del div*/
+    background-color: deeppink;
+}
+
+.title-2+.text-3{/*agrega estilo a clase hermana siguiente*/
+    background-color: dodgerblue;
+}

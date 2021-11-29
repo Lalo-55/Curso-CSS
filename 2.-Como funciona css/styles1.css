@@ -1,0 +1,42 @@
+/* ¿Como funciona CSS?
+Especificidad -> Establece como de especifico es un selector
+para saber que estilo aplicar.
+El calculo se realiza con la siguiente formula:
+    Etiquetas y pseudoelementos      = 001
+    Clases, atributos y pseudoclases = 010
+    Ids                              = 100
+    Estilos en linea                 = 1000
+    !inportant Gana a Todo (Pero nunca hay que usarlo, son malas practicas de css)
+Cascada ->Funciona siempre que la especificidad sobre el elemento
+sea la misma
+
+Herencia */
+
+h1{
+    background-color: khaki;
+    
+}
+.title{
+    background-color: lawngreen;
+}
+
+#title{
+    background-color: lightcoral;
+}
+
+h1.title{
+    background-color: lightskyblue;
+}
+h1#title{
+    background-color: rgb(209, 206, 13);
+}
+
+h1.title#title{
+    background-color: maroon;
+}
+h1{ /*ejemplo de lo que nunca hay que hacer.
+    A pesar de que la etiqueta tiene un valor de 001
+    se aplica sobre todas los demas estilos, ya que 
+    usamos el metodo "!important" */
+    background-color: orange !important;
+}

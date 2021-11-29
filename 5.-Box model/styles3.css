@@ -1,0 +1,111 @@
+/*  Padding:
+        Es la propiedad que nos permite generar espacio interno entre el borde y la caja
+        Es la shorthand (propiedad abreviada) que controla los 4 lados posibles a los que dar padding.
+
+        padding-top:  padding superior 
+        padding-right:padding derecho
+        padding-bottom:padding inferior
+        padding-left:  padding izquierdo
+
+        Admite hasta 4 valores que van en el orden de los agujas del reloj
+            4 valores-> padding:[top] [right] [bottom] [left]
+            3 valores-> padding:[top] [left / right] [bottom]
+            2 valores ->padding:[top/bottom] [left/ right] 
+            1 valor  -> padding: [top/right/bottom/left]
+
+         Border:
+            Es la propiedad que nos permite modificar el borde de la caja
+            Es ina shorthand(propiedad abrviada) que agrupa 3 propiedades
+                border-width: ancho del borde
+                    border-top-width
+                    border-right-width
+                    border-bottom-width
+                    border-left-width
+                border-style: estilo de borde
+                    border-top-style
+                    border-righ-style
+                    border-bottom-style
+                    border-left-style
+                        Listado de valores para style:
+                            none
+                            hidden
+                            dottef
+                            dashed
+                            solid
+                            double
+                            groove
+                            ridge
+                            inset
+                            outset
+                
+                border-color: color border
+                    border-top-color
+                    border-righ-color
+                    border-bottom-color
+                    border-left-color
+
+
+        Box-siging: 
+            Es la propiedad que nos permite controlar el calculo que hace el navegador a la hora de modificar las propiedades content, padding y border
+            Los valores que podemos darle son
+            content-box -> Valor pod defecto
+            border-box -> Calculo de tamaño del elemento
+                incluyendo el padding y el border
+
+        */
+        *{
+            box-sizing: border-box;
+           
+        }
+        body{
+           
+            background-color: oldlace;
+            border: 20px solid rgb(93, 93, 93);
+           
+        }
+        .title{
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            background-color: khaki;
+        }
+        .block{
+            background-color:blueviolet;
+            width:100px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border:10px solid red;
+            
+            
+        }
+        .inline{
+            background-color:violet;
+            padding-top: 300px;
+            margin-left: 200px;
+        }
+        .buttons{
+            background-color: turquoise;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        
+        }
+        .button{
+            background-color: rgb(236, 172, 129);
+            margin-left:50px ;
+            font-size: xx-large;
+            padding: 50px 20px ;
+            border: 20px solid blue;
+            border-width: 30px;
+            border-style: double;
+            border-color: chartreuse;
+            border-right: 5px solid red;
+            border-left-width: 50px;
+            border-left-style: outset;
+            border-left-color: seashell;
+            
+        }
+

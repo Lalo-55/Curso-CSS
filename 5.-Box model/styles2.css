@@ -1,0 +1,43 @@
+/* Margin:
+    Es la propiedad que nos permite generar espacio entre elementos.
+    Es un shorthand (propiedad abreviada) que controla
+    los 4 lados posibles a los que dar margenes.
+        margin-top:Margen superio
+        margin-right:Margen derecho
+        margin-bottom: Margen inferior
+        margin-left: Margen izquierdo
+        
+        Admite hasta 4 valores que van en el orden de los agujas del reloj
+            4 valores-> margin:[top] [right] [bottom] [left]
+            3 valores-> margin:[top] [left / right] [bottom]
+            2 valores ->margin:[top/bottom] [left/ right] 
+            1 valor  -> margin: [top/right/bottom/left]  */
+body{
+    background-color: slategray;
+    color: thistle;
+    margin: 0;
+}    
+.title{
+   
+    background-color: ivory;
+    width: 200px;
+    /*Metodo para centrar*/
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+.block{
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+    margin:10px auto;
+}    
+.inline{ /*Elementos enlinea solo margin horizontal*/
+
+    background-color: tomato;
+    color:inherit;
+    
+    margin-left: 40%;
+
+}

@@ -1,0 +1,94 @@
+/* 
+    Las medidas en CSS se pueden agrupar en 2 grupos, absolutos y relativas
+    
+    Las medidas absolutas NO CAMBIAN y siempre mantendran su tamaño independientemente del dispositivo o la interaccion del usuario 
+    La mas usada es px (pixeles) cuya medida es 1/96 de lin, pero existen otras como:
+        cm (centimetros) -> 1cm = 96px/2.54
+        mm (milimetros)  -> 1mm = 1/10 de 1cm
+        Q (cuarto de milimetro -> 1Q = 1/40 de 1cm
+        in (inches, pulgada) ->  1 in = 2.54cm = 96px
+        pc (picas)      ->  1pc = 1/16 de 1 in
+        pt (puntos)      ->  1pt = 1/72 de 1 in
+
+    Las medidas relativas SIEMPRE dependen de un contexto son las que se recomienda utilizar en la gran mayoria de ocasiones porque nos van a permitir que todos los elementos escalen proporcionalmente
+    Las mas usadas son em, rem, %, vw, vh, vmin y vmax aunque tenemos otras como:
+        ex -> Altura x de la fuente del elemento
+        ch -> La medida del ancho del glifo "0" de la letra del elemento
+        lh -> Altura de la linea del elemento
+
+
+    rem -> Corresponde a la medida de la "m" de la raiz del documento (html)
+
+
+    em  -> Corresponde a la medida de la "m" del contexto donde nos encontremos
+
+    El estandar del tamaño de fuente por defecto es la raiz del documento es 16px. y NO ES RECOMENDABLE MODIFICARLO
+
+    NOTA: Tanto "em" como "rem" se calcula en base a la propiedad font-size (tamaño de fuente)
+
+
+
+
+    %-> Cuando usamos porcentaje usamos de referencia el tamaño del contenedor y el navegador calcula ese porcentaje. Esto no ocurre cuando usamos transform
+
+    auto -> Cuando usamos auto le pedimos al navegador que calcule en funcion del espacio disponible
+
+
+
+
+    HIGTH:
+        % ->Cuando estamos dentro de un contenedor, este tiene que tener un alto  declarado, si no no  podra calcular el porcentaje. Si se le aplica una medida con porcentaje se sustituira automaticamente por auto.
+
+        auto -> Cuando utilizamos auto el alto lo calculara el navegador en base al contenido del elemento
+
+
+    NOTA: Heigth es una propiedad que teneis que usar con mucho cuidado. Si no es necesario establecer un alto, dejad que el contenido sea el que decida el alto del elemento.
+
+    VIEWPORT
+        El viweport es el area util donde se mostrara la pagina web. IMPORTANTE, teneis en cuenta que es el area visible si hacer scroll.
+        Podemos usar el viewport como medida de varias formas:
+            vw ->Viewport Width, hace referencia al ancho del viewport
+
+            vh ->Viewport heigth, hace referencia al alto del viewport
+
+            vmax -> Utiliza el valor más grande entre el ancho y el alto del viewport
+
+            vmin -> Utiliza el valor más pequeño entre el ancho y el alto del viewport
+
+            1vw = 1% del ancho del viewport
+            1vh = 1% del alto del viewport
+            1vmin = 1% del valor que sea mas pequeños del viewport
+            1vmax = 1% del valor que sea mas grande del viewport
+
+*/
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 300px;
+}
+body{
+    margin: 0;
+    background-color: darkslategrey;
+    color: lightcoral;
+}
+.header{
+    background-color: aquamarine;
+    text-align: center;
+    height: 100vh;
+    
+
+}
+.box{
+    background-color: navajowhite;
+    width: 300px;
+    height: 300px;
+}
+.box-children{
+    width: 100px;
+    height: 2rem;
+    background-color: blueviolet;
+    border: 1px solid blue;
+    
+
+}

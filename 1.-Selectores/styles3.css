@@ -1,0 +1,22 @@
+/* Selector de hijo directo */
+
+.container p{/*aplica estilo a todos los "p" que estan 
+             dentro de la clase "container", sin importar
+             que no sean hijos directos*/
+    background-color: violet;
+}
+.container > p{/*Aplica estilo a todos los "p" siempre
+    y cuando sean hijos de la clase 
+    container*/
+background-color: tomato;
+}
+
+.container >h2{
+    background-color: grey;
+}
+.title{
+    background-color: greenyellow;
+}
+div .text{
+    background-color: indigo;
+}

@@ -1,0 +1,20 @@
+/* Siempre que utilicemos fuentes genericas, debemos poner fuentes genericas de fallback (respaldo) 
+
+*/
+@font-face{/*método para usar una fuente descargada y alojada en el servidor*/
+    font-family: "chanchito contento";
+    src: url('../17.-Fuentes/assets/fonts/CactusSandwichFill.ttf')
+}
+body{
+    background-color: #333;
+    color: rgb(139, 181, 218);
+    /* font-family:sans-serif;   fuente generica */
+
+    font-family: 'roboto',sans-serif;
+    font-family: "chanchito contento";
+    
+
+}
+.text{
+    font-family: 'VT323', monospace;
+}

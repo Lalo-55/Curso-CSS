@@ -1,0 +1,28 @@
+/* Herencia -> Es la capacidad que tienen algunos elementos de heredar
+ algunas propiedades de sus elementos conetenedores(padres, abuelos, etc) */
+ body{
+     background-color:darkgreen;
+ }
+ .title{
+    color: blue;
+    font-size: 50px;
+}
+
+ .text{
+     color:hotpink;
+    
+ }
+ .link{ /*Metodo para que un link que regularmento no hereda estilos,
+     se forze a heredar "inherit"*/
+
+     color: inherit;
+    
+ }
+ .list{
+     color: darkseagreen;
+ }
+
+ .list-item-4{ /*Metodo para que un elemento de la lista no herede el color
+    de la clase "list".  initial*/
+     color:initial;
+ }
